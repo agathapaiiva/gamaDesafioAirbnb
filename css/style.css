@@ -1,0 +1,37 @@
+.container-fluid { padding: 0 !important; }
+
+#cards{
+    border-radius: calc(.25rem - 1px);
+    display: grid; 
+    margin: 0 !important;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.card-body{
+    background-color: rgb(231, 231, 231);
+}
+
+@media screen and (min-width: 320px) and (max-width: 568px){
+    #cards{
+       grid-template-columns: repeat(1, 1fr);
+       grid-gap: 15px;
+       border-radius: calc(.25rem - 1px);
+    }
+
+    #icons{
+        margin-left: 25% !important;
+    }
+}
+
+#footer{
+    background-color: rgb(231, 231, 231);
+}
+
+#rodape{
+    background-color: rgb(197, 197, 197);
+}
+
+#icons{
+    margin-left: 40%;
+}
